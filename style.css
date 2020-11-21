@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@media screen and (max-width:740px){
+  main.container{
+    display: flex;
+    flex-direction: column;
+  }
+  .title{
+    font-size: 1.2em;
+  }
+}
+body{
+  font-family: 'Karla',sans-serif; 
+  font-size: 16px;
+  background-color:hsl(204, 43%, 93%);
+}
+.container{
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 0 20px hsla(204, 43%, 93%,0.8);
+  display: grid;
+  width: 50%;
+  color: white;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 0.8fr 1.2fr;
+  grid-template-areas: 
+  "firstBlock firstBlock"
+  "secondBlock thirdBlock"
+  ;
+}
+.firstBlock, .secondBlock, .thirdBlock{
+  padding:20px;
+}
+.firstBlock{
+  grid-area: firstBlock;
+  background-color: white;
+}
+.secondBlock{
+  grid-area: secondBlock;
+  background-color: hsl(179, 62%, 43%);
+}
+.thirdBlock{
+  grid-area: thirdBlock;
+  background-color: #4abebd;
+  text-align: left;
+}
+.title{
+  color: hsl(179, 62%, 43%);
+}
+p.brightyellow{
+  color: hsl(71, 73%, 54%);;
+}
+a.brightyellow, button{
+  background-color: hsl(71, 73%, 54%);
+}
+.grayishblue{
+  color:hsl(216, 26%, 93%);
+}
+span.grayishblue{
+  font-size: 1rem;
+}
+h2{
+  font-size: 1rem;
+}
+button{
+  display: block;
+  margin: auto;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 90%;
+  height: 20%;
+  box-shadow: 0 0 5px hsla(71, 73%, 54%,0.8);
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+.prize{
+  margin: 0;
+  font-size: 2em;
+}
+button:hover{
+  background-color: hsl(71, 66%, 33%);
+}
